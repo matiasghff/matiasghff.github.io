@@ -51,13 +51,17 @@
     <p><strong>Github:</strong> <a href="https://github.com/matiasghff" target="_blank">github.com/matiasghff</a></p>
 
     <h2>Resumen Personal</h2>
-    <p id="personal-summary">
+    <p>
         Estudiante de computación en la Universidad de los Andes. Previamente fui estudiante de ingeniería civil en la Pontificia Universidad Católica de Chile y este año, por motivos personales, realicé un cambio a esta casa de estudios.
     </p>
 
+    <h2>¡Hola usuario! Cuéntame algo de ti.</h2>
+    <p id="user-story">
+        Puedes escribir algo sobre ti aquí.
+    </p>
     <div id="input-section">
-        <input type="text" id="user-input" placeholder="Enter new text here">
-        <button onclick="updateSummary()">Update Summary</button>
+        <input type="text" id="user-input-story" placeholder="Enter your story">
+        <button onclick="updateUserStory()">Update Story</button>
     </div>
 
     <h2>Habilidades</h2>
@@ -105,9 +109,9 @@
     </table>
 
     <script>
-        function updateSummary() {
-            var userInput = document.getElementById('user-input').value;
-            document.getElementById('personal-summary').innerText = userInput;
+        function updateUserStory() {
+            var userInput = document.getElementById('user-input-story').value;
+            document.getElementById('user-story').innerText = userInput;
         }
     </script>
 
