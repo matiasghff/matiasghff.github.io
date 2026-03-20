@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matias Garcia-Huidobro | Personal Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1 class="main-title">Matias Garcia-Huidobro</h1>
+      <p class="subtitle">Software Engineering Student</p>
+    </header>
+
+    <section class="card">
+      <h2 class="section-title">About Me</h2>
+      <p><strong>Name:</strong> Matias Garcia-Huidobro</p>
+      <p><strong>Major:</strong> Software Engineering</p>
+      <p><strong>Year of University Enrollment:</strong> 2023</p>
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/matiasghff" target="_blank">https://github.com/matiasghff</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Personal Summary</h2>
+      <p>
+        I am a software engineering student interested in backend development,
+        data, and technology. I enjoy learning how systems work, building useful
+        solutions, and improving my programming skills through academic and personal projects.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Skills</h2>
+      <table class="skills-table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Basic</td>
+          </tr>
+          <tr>
+            <td>HTML/CSS</td>
+            <td>Basic</td>
+          </tr>
+          <tr>
+            <td>Git</td>
+            <td>Basic</td>
+          </tr>
+          <tr>
+            <td>Excel</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>SQL</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>Ruby</td>
+            <td>Basic</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>Spanish</td>
+            <td>Native</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Favorite Quote</h2>
+      <p id="dynamic-text">If you are going through hell, keep going!.</p>
+
+      <div class="input-area">
+        <input type="text" id="quoteInput" placeholder="Write a new quote here" />
+        <button class="change-button" onclick="changeQuote()">Change Quote</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function changeQuote() {
+      const input = document.getElementById("quoteInput").value;
+      const textElement = document.getElementById("dynamic-text");
+
+      if (input.trim() !== "") {
+        textElement.textContent = input;
+      } else {
+        textElement.textContent = "Please write something first.";
+      }
+    }
+  </script>
+</body>
+</html>
